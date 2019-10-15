@@ -18,11 +18,11 @@
 #define VENDOR_LINEAGE_LIVEDISPLAY_V1_0_TYPES_H
 
 #include <utils/RefBase.h>
-#include <vendor/lineage/livedisplay/1.0/IColor.h>
+#include <vendor/deltaotg/livedisplay/1.0/IColor.h>
 #include <string>
 
 namespace vendor {
-namespace lineage {
+namespace deltaotg {
 namespace livedisplay {
 namespace V1_0 {
 namespace implementation {

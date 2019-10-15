@@ -5,7 +5,7 @@ LOCAL_PATH := $(call my-dir)
 ################################################################################
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.lineage.power-V1.0-java
+LOCAL_MODULE := vendor.deltaotg.power-V1.0-java
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 
 intermediates := $(call local-generated-sources-dir, COMMON)
@@ -19,7 +19,7 @@ LOCAL_JAVA_LIBRARIES := \
 #
 # Build types.hal (LineageFeature)
 #
-GEN := $(intermediates)/vendor/lineage/power/V1_0/LineageFeature.java
+GEN := $(intermediates)/vendor/deltaotg/power/V1_0/LineageFeature.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -28,8 +28,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.power@1.0::types.LineageFeature
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.power@1.0::types.LineageFeature
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -38,7 +38,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (LineagePowerHint)
 #
-GEN := $(intermediates)/vendor/lineage/power/V1_0/LineagePowerHint.java
+GEN := $(intermediates)/vendor/deltaotg/power/V1_0/LineagePowerHint.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -47,8 +47,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.power@1.0::types.LineagePowerHint
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.power@1.0::types.LineagePowerHint
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -57,7 +57,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build ILineagePower.hal
 #
-GEN := $(intermediates)/vendor/lineage/power/V1_0/ILineagePower.java
+GEN := $(intermediates)/vendor/deltaotg/power/V1_0/ILineagePower.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/ILineagePower.hal
@@ -68,8 +68,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.power@1.0::ILineagePower
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.power@1.0::ILineagePower
 
 $(GEN): $(LOCAL_PATH)/ILineagePower.hal
 	$(transform-generated-source)
@@ -80,7 +80,7 @@ include $(BUILD_JAVA_LIBRARY)
 ################################################################################
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.lineage.power-V1.0-java-static
+LOCAL_MODULE := vendor.deltaotg.power-V1.0-java-static
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 
 intermediates := $(call local-generated-sources-dir, COMMON)
@@ -94,7 +94,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 #
 # Build types.hal (LineageFeature)
 #
-GEN := $(intermediates)/vendor/lineage/power/V1_0/LineageFeature.java
+GEN := $(intermediates)/vendor/deltaotg/power/V1_0/LineageFeature.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -103,8 +103,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.power@1.0::types.LineageFeature
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.power@1.0::types.LineageFeature
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -113,7 +113,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (LineagePowerHint)
 #
-GEN := $(intermediates)/vendor/lineage/power/V1_0/LineagePowerHint.java
+GEN := $(intermediates)/vendor/deltaotg/power/V1_0/LineagePowerHint.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -122,8 +122,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.power@1.0::types.LineagePowerHint
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.power@1.0::types.LineagePowerHint
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -132,7 +132,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build ILineagePower.hal
 #
-GEN := $(intermediates)/vendor/lineage/power/V1_0/ILineagePower.java
+GEN := $(intermediates)/vendor/deltaotg/power/V1_0/ILineagePower.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/ILineagePower.hal
@@ -143,8 +143,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.power@1.0::ILineagePower
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.power@1.0::ILineagePower
 
 $(GEN): $(LOCAL_PATH)/ILineagePower.hal
 	$(transform-generated-source)

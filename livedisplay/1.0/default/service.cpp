@@ -15,9 +15,9 @@
  */
 
 #if defined(COLOR_BACKEND_SDM)
-#define LOG_TAG "vendor.lineage.livedisplay@1.0-service-sdm"
+#define LOG_TAG "vendor.deltaotg.livedisplay@1.0-service-sdm"
 #elif defined(COLOR_BACKEND_LEGACYMM)
-#define LOG_TAG "vendor.lineage.livedisplay@1.0-service-legacymm"
+#define LOG_TAG "vendor.deltaotg.livedisplay@1.0-service-legacymm"
 #else
 #error "Color backend undefined!"
 #endif
@@ -34,8 +34,8 @@ using android::OK;
 using android::sp;
 using android::status_t;
 
-using ::vendor::lineage::livedisplay::V1_0::IColor;
-using ::vendor::lineage::livedisplay::V1_0::implementation::Color;
+using ::vendor::deltaotg::livedisplay::V1_0::IColor;
+using ::vendor::deltaotg::livedisplay::V1_0::implementation::Color;
 
 int main() {
     status_t status;

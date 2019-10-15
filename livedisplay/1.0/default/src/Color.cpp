@@ -31,8 +31,8 @@
 
 namespace {
 
-using vendor::lineage::livedisplay::V1_0::DisplayMode;
-using vendor::lineage::livedisplay::V1_0::implementation::disp_mode;
+using vendor::deltaotg::livedisplay::V1_0::DisplayMode;
+using vendor::deltaotg::livedisplay::V1_0::implementation::disp_mode;
 
 DisplayMode modePointerToObj(android::sp<disp_mode> mode) {
     DisplayMode m;
@@ -49,7 +49,7 @@ DisplayMode invalidDisplayMode() {
 }  // anonymous namespace
 
 namespace vendor {
-namespace lineage {
+namespace deltaotg {
 namespace livedisplay {
 namespace V1_0 {
 namespace implementation {

@@ -18,14 +18,14 @@
 #ifndef VENDOR_LINEAGE_LIVEDISPLAY_V1_0_COLOR_H
 #define VENDOR_LINEAGE_LIVEDISPLAY_V1_0_COLOR_H
 
-#include <vendor/lineage/livedisplay/1.0/IColor.h>
+#include <vendor/deltaotg/livedisplay/1.0/IColor.h>
 
 #include <utils/Mutex.h>
 
 #include <memory>
 
 namespace vendor {
-namespace lineage {
+namespace deltaotg {
 namespace livedisplay {
 namespace V1_0 {
 namespace implementation {
@@ -34,7 +34,7 @@ using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::android::hardware::hidl_vec;
 
-using ::vendor::lineage::livedisplay::V1_0::IColor;
+using ::vendor::deltaotg::livedisplay::V1_0::IColor;
 
 class ColorBackend;
 

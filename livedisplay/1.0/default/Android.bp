@@ -31,13 +31,13 @@ cc_defaults {
         "libhidlbase",
         "libhidltransport",
         "libutils",
-        "vendor.lineage.livedisplay@1.0_vendor",
+        "vendor.deltaotg.livedisplay@1.0_vendor",
     ],
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@1.0-service-legacymm",
-    init_rc: ["vendor.lineage.livedisplay@1.0-service-legacymm.rc"],
+    name: "vendor.deltaotg.livedisplay@1.0-service-legacymm",
+    init_rc: ["vendor.deltaotg.livedisplay@1.0-service-legacymm.rc"],
     defaults: ["livedisplay_defaults"],
     cflags: ["-DCOLOR_BACKEND_LEGACYMM"],
     srcs: [
@@ -47,8 +47,8 @@ cc_binary {
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@1.0-service-sdm",
-    init_rc: ["vendor.lineage.livedisplay@1.0-service-sdm.rc"],
+    name: "vendor.deltaotg.livedisplay@1.0-service-sdm",
+    init_rc: ["vendor.deltaotg.livedisplay@1.0-service-sdm.rc"],
     defaults: ["livedisplay_defaults"],
     cflags: ["-DCOLOR_BACKEND_SDM"],
     srcs: [

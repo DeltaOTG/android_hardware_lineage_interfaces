@@ -22,7 +22,7 @@
 #include <stdint.h>
 
 namespace vendor {
-namespace lineage {
+namespace deltaotg {
 namespace livedisplay {
 namespace V1_0 {
 namespace implementation {

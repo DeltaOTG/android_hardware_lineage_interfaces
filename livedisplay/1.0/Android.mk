@@ -5,7 +5,7 @@ LOCAL_PATH := $(call my-dir)
 ################################################################################
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.lineage.livedisplay-V1.0-java
+LOCAL_MODULE := vendor.deltaotg.livedisplay-V1.0-java
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 
 intermediates := $(call local-generated-sources-dir, COMMON)
@@ -19,7 +19,7 @@ LOCAL_JAVA_LIBRARIES := \
 #
 # Build types.hal (DisplayMode)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/DisplayMode.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/DisplayMode.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -28,8 +28,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.DisplayMode
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.DisplayMode
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -38,7 +38,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (Feature)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/Feature.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/Feature.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -47,8 +47,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.Feature
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.Feature
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -57,7 +57,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (FloatRange)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/FloatRange.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/FloatRange.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -66,8 +66,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.FloatRange
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.FloatRange
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -76,7 +76,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (HSIC)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/HSIC.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/HSIC.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -85,8 +85,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.HSIC
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.HSIC
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -95,7 +95,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (Range)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/Range.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/Range.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -104,8 +104,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.Range
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.Range
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -114,7 +114,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build IColor.hal
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/IColor.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/IColor.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/IColor.hal
@@ -125,8 +125,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::IColor
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::IColor
 
 $(GEN): $(LOCAL_PATH)/IColor.hal
 	$(transform-generated-source)
@@ -137,7 +137,7 @@ include $(BUILD_JAVA_LIBRARY)
 ################################################################################
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.lineage.livedisplay-V1.0-java-static
+LOCAL_MODULE := vendor.deltaotg.livedisplay-V1.0-java-static
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 
 intermediates := $(call local-generated-sources-dir, COMMON)
@@ -151,7 +151,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 #
 # Build types.hal (DisplayMode)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/DisplayMode.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/DisplayMode.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -160,8 +160,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.DisplayMode
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.DisplayMode
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -170,7 +170,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (Feature)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/Feature.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/Feature.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -179,8 +179,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.Feature
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.Feature
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -189,7 +189,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (FloatRange)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/FloatRange.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/FloatRange.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -198,8 +198,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.FloatRange
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.FloatRange
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -208,7 +208,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (HSIC)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/HSIC.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/HSIC.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -217,8 +217,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.HSIC
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.HSIC
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -227,7 +227,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (Range)
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/Range.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/Range.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -236,8 +236,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::types.Range
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::types.Range
 
 $(GEN): $(LOCAL_PATH)/types.hal
 	$(transform-generated-source)
@@ -246,7 +246,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build IColor.hal
 #
-GEN := $(intermediates)/vendor/lineage/livedisplay/V1_0/IColor.java
+GEN := $(intermediates)/vendor/deltaotg/livedisplay/V1_0/IColor.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/IColor.hal
@@ -257,8 +257,8 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/lineage/interfaces \
-        vendor.lineage.livedisplay@1.0::IColor
+        -rvendor.deltaotg:hardware/deltaotg/interfaces \
+        vendor.deltaotg.livedisplay@1.0::IColor
 
 $(GEN): $(LOCAL_PATH)/IColor.hal
 	$(transform-generated-source)

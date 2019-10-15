@@ -55,7 +55,7 @@ enum {
 
 struct hsic_config {
     uint32_t flags;
-    vendor::lineage::livedisplay::V1_0::HSIC data;
+    vendor::deltaotg::livedisplay::V1_0::HSIC data;
 };
 
 struct hsic_float_range {
@@ -81,7 +81,7 @@ struct hsic_ranges {
 }  // anonymous namespace
 
 namespace vendor {
-namespace lineage {
+namespace deltaotg {
 namespace livedisplay {
 namespace V1_0 {
 namespace implementation {

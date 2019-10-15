@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package vendor.lineage.power@1.0;
+package vendor.deltaotg.power@1.0;
 
 interface ILineagePower {
     /**

@@ -34,7 +34,7 @@ constexpr char LOCAL_MODE_ID[] = "livedisplay_mode";
 constexpr char LOCAL_INITIAL_MODE_ID[] = "livedisplay_initial_mode";
 
 namespace vendor {
-namespace lineage {
+namespace deltaotg {
 namespace livedisplay {
 namespace V1_0 {
 namespace implementation {

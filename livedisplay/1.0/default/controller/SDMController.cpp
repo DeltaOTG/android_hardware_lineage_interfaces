@@ -66,7 +66,7 @@ Function loadFunction(std::shared_ptr<void> handle, const char* name) {
 }  // anonymous namespace
 
 namespace vendor {
-namespace lineage {
+namespace deltaotg {
 namespace livedisplay {
 namespace V1_0 {
 namespace implementation {

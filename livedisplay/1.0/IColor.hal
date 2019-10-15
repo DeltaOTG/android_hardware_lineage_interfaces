@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package vendor.lineage.livedisplay@1.0;
+package vendor.deltaotg.livedisplay@1.0;
 
 interface IColor {
     getSupportedFeatures() generates (Features features);
